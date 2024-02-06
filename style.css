@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #366c99;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#start-page, #quiz-container, .question {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#quiz-container {
+    position: absolute;
+    top: 50%; /* Centralizar na vertical */
+    left: 50%; /* Centralizar na horizontal */
+    transform: translate(-50%, -50%); /* Utilizado pra centralizar na tela */
+    max-width: 800px;
+    margin: 0 auto;
+    display: center;
+}
+
+.answer-button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.answer-button:hover {
+    background-color: #f0f0f0;
+}
+
+#start-page {
+    background-color: #366c99;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#start-page h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#play-button, #restart-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#play-button {
+    background-color: #3498db; /* Azul claro inicial */
+    color: white;
+    border-radius: 20px;
+}
+
+#play-button:hover {
+    background-color: #2980b9; /* Azul mais claro ao passar o mouse */
+}
+
+#how-to-play {
+    font-weight: bold;
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.option {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.incorrect {
+    background-color: #FF0000;
+    color: white;
+}
+
+#result {
+    position: absolute;
+    top: 50%; /* Centralizar na vertical */
+    left: 50%; /* Centralizar na horizontal */
+    transform: translate(-50%, -50%); /* Utilizado pra centralizar na tela */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#summary-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;    
+}
+  
+#summary {
+    font-size: 18px;
+}
+  
+#summary div {
+    margin-bottom: 10px;
+}
+
+#restart-button {
+    background-color: #3498db;
+    color: white;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px; 
+}
+  
+#restart-button:hover {
+    background-color: #2980b9;
+}

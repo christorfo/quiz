@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://br.freepik.com/vetores-premium/logotipo-do-quiz-com-icone-de-bolha-de-fala_25233070.htm" type="image/x-icon">
+</head>
+<body>
+    <div id="start-page">
+          <h1 id="quiz-title">
+            <img src="https://br.freepik.com/vetores-premium/logotipo-do-quiz-com-icone-de-bolha-de-fala_25233070.htm" alt="Quiz Icon">Quiz Game</h1>
+              <input type="text" name="nome" class="nome-input" placeholder="Digite seu nome">
+                <span class="valid-icon">
+                  <i class ="fa fa-check"></i>
+                </span>
+                <span class="invalid-icon">
+                  <i class="fa fa-times"></i>
+                </span>
+            <button id="play-button" onclick="startQuiz()">Jogue Agora</button>
+        <p id="how-to-play">Como Jogar?</p>
+    </div>
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+            <div id="question-container" class="question"></div>
+                <ul id="options-container" class="options"></ul>
+            <div id="result"></div>
+    </div>
+    <div id="summary-container">
+        <h2>Suas escolhas</h2>
+        <div id="summary"></div>
+        <button onclick="restartQuiz()">Reiniciar Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
